@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Static vs. Dynamic Optimization</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .display-type {
+      font-family: "Fraunces", ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      font-variation-settings: "SOFT" 50;
+    }
+    .series-title {
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+      text-wrap: balance;
+    }
+    .article-title {
+      letter-spacing: -0.045em;
+      line-height: 0.96;
+      text-wrap: balance;
+    }
+    .section-title {
+      letter-spacing: -0.03em;
+      line-height: 1.02;
+      text-wrap: balance;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900">
+  <div class="mx-auto max-w-7xl px-6 py-10 sm:px-8 lg:px-12">
+    <div class="mb-6 rounded-2xl border border-slate-200 bg-white px-5 py-5 shadow-sm"><div class="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between"><p class="display-type series-title text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">Getting The Words Right</p><div class="text-sm leading-6 text-slate-600 lg:text-right"><p>by John Cutler</p><p class="mt-1">Use and adapt with attribution.</p></div></div><div class="mt-5 border-t border-slate-200 pt-4"><div id="series-nav-root"></div></div></div>
+    <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_18rem]">
+      <main class="min-w-0">
+        <div class="rounded-3xl border border-slate-200 bg-white px-6 py-8 shadow-sm sm:px-10 sm:py-12">
+          <header class="mb-10"><h1 id="static-vs-dynamic-optimization" class="display-type article-title text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">Static vs. Dynamic Optimization</h1></header>
+<div class="mt-6 rounded-2xl border border-sky-200 bg-sky-50 px-5 py-4 shadow-sm"><p class="text-xs font-semibold uppercase tracking-[0.2em] text-sky-700">Summary</p><p class="mt-2 break-words text-lg leading-8 text-slate-700">Treat product development as a dynamic optimization problem, not a static one. The difference is not academic. It changes how you define success, how you make decisions, and how you structure work.</p></div>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The previous note showed why product systems are harder to model: the relevant things evolve, the processes overlap, and time and state matter more. This note adds a second lens. Once the landscape itself is moving, the problem is not just harder to represent. It is also a different kind of optimization problem.</p>
+<h2 id="the-core-distinction" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">The Core Distinction</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">A static optimization problem assumes:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">the objective is known</li><li class="pl-1">the constraints are fixed</li><li class="pl-1">the solution can be computed</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">A dynamic optimization problem assumes:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">the objective evolves</li><li class="pl-1">constraints can be introduced, removed, or reshaped</li><li class="pl-1">the solution is discovered over time</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In product work, you are usually not solving for a fixed answer. You are navigating a moving landscape.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In more practical terms, static framing assumes you can define the goal, lock the constraints, make a plan, and then execute. Dynamic framing assumes you will learn what matters while doing the work, revise constraints to shape the search, and update decisions as new information appears.</p>
+<h2 id="other-names-you-may-hear" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Other Names You May Hear</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Different domains describe similar ideas in different ways:</p>
+<div class="mt-6 overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm"><table class="min-w-full border-collapse"><thead class="bg-slate-50"><tr><th class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wide text-slate-600">Optimization framing</th><th class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wide text-slate-600">Roughly similar ideas</th></tr></thead><tbody><tr class="border-t border-slate-200"><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">Static optimization</td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">planning, prediction, upfront design, deterministic systems</td></tr><tr class="border-t border-slate-200"><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">Dynamic optimization</td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">learning, adaptation, exploration, control systems</td></tr><tr class="border-t border-slate-200"><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">Objective function</td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">success metric, goal, value function</td></tr><tr class="border-t border-slate-200"><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">Constraints</td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">guardrails, policies, enabling constraints</td></tr><tr class="border-t border-slate-200"><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">Solution</td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">plan, roadmap, implementation</td></tr></tbody></table></div>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">These are not exact matches, but they help translate between theory and practice.</p>
+<h2 id="operational-difference" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Operational Difference</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Use this test:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">If you can define the objective, constraints, and solution before starting, and you have very high confidence they will all hold, you are in a more static problem.</li><li class="pl-1">If any of those change meaningfully as you proceed, you are in a more dynamic problem.</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Here is a rough gradient:</p>
+<div class="mt-6 overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm"><table class="min-w-full border-collapse"><thead class="bg-slate-50"><tr><th class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wide text-slate-600">Case</th><th class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wide text-slate-600">Objective</th><th class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wide text-slate-600">Constraints</th><th class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wide text-slate-600">Solution shape</th></tr></thead><tbody><tr class="border-t border-slate-200"><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">Very static: manufacturing throughput tuning</td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">Increase throughput by a known amount</td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">Mostly fixed: machine capacity, labor, safety limits</td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">Choose and tune from a fairly well-understood solution space</td></tr><tr class="border-t border-slate-200"><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">More mixed: service operations improvement</td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">Improve incident response and reduce customer pain</td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">Some fixed, some redesignable: tooling, handoffs, ownership, alerting</td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">Partly known upfront, partly discovered through investigation</td></tr><tr class="border-t border-slate-200"><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">Highly dynamic: new product or strategy work</td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">The goal itself may shift as you learn</td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">Useful constraints may need to be introduced gradually</td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700">Emerges through exploration, interpretation, and adjustment</td></tr></tbody></table></div>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Most consequential product work sits closer to the second and third cases than the first.</p>
+<h3 id="example-amazon-s-weekly-business-review" class="display-type section-title mt-8 text-xl font-semibold tracking-tight text-slate-900">Example: Amazon's Weekly Business Review</h3>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">A good example of dynamic optimization in practice is Amazon's WBR. It is often described as a metrics meeting, but it is more accurate to think of it as a system for continuously updating a model of the business.</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">leaders review hundreds of metrics weekly</li></ul>
+<blockquote class="mt-6 rounded-2xl border-l-4 border-violet-300 bg-violet-50 px-5 py-5 shadow-sm"><div><p class="mt-4 first:mt-0 break-words text-lg leading-8 text-slate-700">"The metrics in a WBR are not static — you are expected to add or discard controllable input metrics as they stop working ..."</p></div></blockquote>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">As <a href="https://commoncog.com/the-amazon-weekly-business-review/" class="break-all font-medium text-sky-700 underline decoration-sky-300 underline-offset-4 hover:text-sky-900">Cedric Chin argues in his piece on the Amazon WBR</a>, it is best understood as a process control tool: a way to uncover and distribute the causal structure of a business so teams can act with better understanding.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">From a modeling perspective:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">the business is treated as something unfolding over time</li><li class="pl-1">metrics act as signals of that unfolding</li><li class="pl-1">weekly review creates a learning loop</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This is dynamic optimization in practice.</p>
+<h2 id="where-teams-get-into-trouble" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Where Teams Get Into Trouble</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Most issues come from treating dynamic problems like static ones.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Common failure modes:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">locking the objective too early -&gt; optimizing for the wrong thing</li><li class="pl-1">treating constraints as fixed -&gt; losing the ability to explore</li><li class="pl-1">over-indexing on planning -&gt; under-investing in learning</li><li class="pl-1">chasing precision over direction -&gt; local optimization, global confusion</li><li class="pl-1">expecting one "right" solution -&gt; ignoring viable alternatives</li></ul>
+<h2 id="back-to-the-framework" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Back to the Framework</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This connects directly back to the earlier notes in the series.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In clearer, more stable systems, the relevant endurants are easier to identify, the constraints hold more consistently, and the perdurants are easier to model as bounded flows. Static optimization makes more sense there because the landscape is not moving very much while you work.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In product work, the relevant endurants are often still being clarified, the constraints may be chosen or revised to shape the search, and the perdurant is the unfolding process of learning, deciding, shipping, interpreting signals, and adjusting. That is why the optimization problem is dynamic. The object of optimization is not fully settled when the work begins.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Seen this way:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">learning is part of the optimization process</li><li class="pl-1">enabling constraints shape the search space</li><li class="pl-1">flexible objectives acknowledge that success criteria evolve</li><li class="pl-1">long-term thinking means optimizing across time, not just for the next local gain</li><li class="pl-1">multiple viable solutions are normal, not a sign that the team has failed to choose the one right answer</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This is not just a different set of tactics. It is a different class of problem.</p>
+<div class="mt-6 rounded-2xl border border-indigo-200 bg-indigo-50 px-5 py-4 shadow-sm"><p class="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-700">As Things Become More Dynamic</p><ul class="mt-3 ml-6 list-disc space-y-2 break-words text-base leading-7 text-slate-700"><li class="pl-1"><strong class="font-semibold text-slate-900">Focus on unfolding perdurants:</strong> Model the things that happen over time, not just the things that exist. That usually means execution, discovery, learning cycles, and decision changes. These are not secondary details. They are often the primary mechanism by which the system evolves.</li><li class="pl-1"><strong class="font-semibold text-slate-900">Model enabling constraints explicitly:</strong> Constraints are not just static rules. They are introduced, adjusted, and sometimes removed to shape how the system learns. Model when a constraint was introduced, what it was intended to do, how it changed over time, and what effect it had.</li><li class="pl-1"><strong class="font-semibold text-slate-900">Focus less on labels, more on trajectories:</strong> Whether something is called an <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">epic</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">initiative</code>, or <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">project</code> is often less important than how it unfolds. Shift from categorizing work toward understanding how it evolves, how it branches or converges, and how decisions shape its path over time.</li><li class="pl-1"><strong class="font-semibold text-slate-900">Treat objectives as evolving, not fixed:</strong> An objective is not always a stable target. Model how the objective was defined, how it changed, and what triggered the change. This preserves the context behind decisions and avoids rewriting history.</li><li class="pl-1"><strong class="font-semibold text-slate-900">Preserve change as first-class:</strong> When something changes, do not overwrite the past. Model the transition, the before and after, and the reason for the change. This allows the system to represent learning, not just current state.</li></ul></div>
+<h2 id="why-this-matters" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Why This Matters</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">If you model a dynamic problem as static:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">your plans become brittle</li><li class="pl-1">your metrics become misleading</li><li class="pl-1">your teams optimize the wrong things</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">If you model it more accurately:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">you design for learning</li><li class="pl-1">you adapt without thrashing</li><li class="pl-1">you make better long-term decisions</li></ul>
+<div class="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50 px-5 py-4 shadow-sm"><p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700">Try This Now</p><ul class="mt-3 ml-6 list-disc space-y-2 break-words text-base leading-7 text-slate-700"><li class="pl-1">Write down a current product initiative.</li><li class="pl-1">Ask: which parts of this are actually fixed?</li><li class="pl-1">Then ask: what are we pretending is fixed that is not?</li></ul></div>
+          <div class="mt-14 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5"><p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Keep Reading</p><a href="rag-status-endurants-and-perdurants.html" class="mt-2 inline-flex items-center text-lg font-medium text-sky-700 underline decoration-sky-300 underline-offset-4 hover:text-sky-900">RAG Status, Endurants, and Perdurants</a></div>
+        </div>
+      </main>
+      <aside class="lg:sticky lg:top-8 lg:h-fit">
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">On This Page</h2>
+          <ul class="mt-4 space-y-1">
+            <li><a href="#the-core-distinction" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">The Core Distinction</a></li><li><a href="#other-names-you-may-hear" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Other Names You May Hear</a></li><li><a href="#operational-difference" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Operational Difference</a></li><li><a href="#where-teams-get-into-trouble" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Where Teams Get Into Trouble</a></li><li><a href="#back-to-the-framework" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Back to the Framework</a></li><li><a href="#why-this-matters" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Why This Matters</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <script src="series-nav.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 (function() {
-  const links = [{"title": "Introduction", "href": "index.html", "filename": "index.html"}, {"title": "Endurant vs. Perdurant", "href": "endurant-vs-perdurant.html", "filename": "endurant-vs-perdurant.html"}, {"title": "From Clear Flows to Complex Systems", "href": "endurants-and-perdurants-across-types-of-systems.html", "filename": "endurants-and-perdurants-across-types-of-systems.html"}, {"title": "RAG Status, Endurants, and Perdurants", "href": "rag-status-endurants-and-perdurants.html", "filename": "rag-status-endurants-and-perdurants.html"}, {"title": "Containers vs. Anchors", "href": "containers-vs-anchors.html", "filename": "containers-vs-anchors.html"}, {"title": "Métis vs. Legibility", "href": "metis-vs-legibility.html", "filename": "metis-vs-legibility.html"}, {"title": "Case Study: Event Storming Perdurants", "href": "case-study-event-storming-perdurants.html", "filename": "case-study-event-storming-perdurants.html"}, {"title": "Theoretical SDLC vs. Real SDLC(s)", "href": "theoretical-sdlc-vs-real-sdlcs.html", "filename": "theoretical-sdlc-vs-real-sdlcs.html"}, {"title": "Transformation Journey as Ontology Shifts", "href": "transformation-journey-as-ontology-shifts.html", "filename": "transformation-journey-as-ontology-shifts.html"}, {"title": "Coupling, Legibility, and Métis", "href": "coupling-legibility-and-metis.html", "filename": "coupling-legibility-and-metis.html"}, {"title": "Factors Shaping Legibility and Métis", "href": "factors-shaping-legibility-and-metis.html", "filename": "factors-shaping-legibility-and-metis.html"}, {"title": "Will It Scale?", "href": "will-it-scale.html", "filename": "will-it-scale.html"}, {"title": "Context Is Not Just Transmitted", "href": "context-is-not-just-transmitted.html", "filename": "context-is-not-just-transmitted.html"}, {"title": "AI Opportunities (and Caveats)", "href": "ai-opportunities-and-caveats.html", "filename": "ai-opportunities-and-caveats.html"}, {"title": "Twelve Practical Moves", "href": "twelve-practical-moves.html", "filename": "twelve-practical-moves.html"}, {"title": "Glossary", "href": "glossary.html", "filename": "glossary.html"}];
+  const links = [{"title": "Introduction", "href": "index.html", "filename": "index.html"}, {"title": "Endurant vs. Perdurant", "href": "endurant-vs-perdurant.html", "filename": "endurant-vs-perdurant.html"}, {"title": "From Clear Flows to Complex Systems", "href": "endurants-and-perdurants-across-types-of-systems.html", "filename": "endurants-and-perdurants-across-types-of-systems.html"}, {"title": "Static vs. Dynamic Optimization", "href": "static-vs-dynamic-optimization.html", "filename": "static-vs-dynamic-optimization.html"}, {"title": "RAG Status, Endurants, and Perdurants", "href": "rag-status-endurants-and-perdurants.html", "filename": "rag-status-endurants-and-perdurants.html"}, {"title": "Containers vs. Anchors", "href": "containers-vs-anchors.html", "filename": "containers-vs-anchors.html"}, {"title": "Métis vs. Legibility", "href": "metis-vs-legibility.html", "filename": "metis-vs-legibility.html"}, {"title": "Case Study: Event Storming Perdurants", "href": "case-study-event-storming-perdurants.html", "filename": "case-study-event-storming-perdurants.html"}, {"title": "Theoretical SDLC vs. Real SDLC(s)", "href": "theoretical-sdlc-vs-real-sdlcs.html", "filename": "theoretical-sdlc-vs-real-sdlcs.html"}, {"title": "Transformation Journey as Ontology Shifts", "href": "transformation-journey-as-ontology-shifts.html", "filename": "transformation-journey-as-ontology-shifts.html"}, {"title": "Coupling, Legibility, and Métis", "href": "coupling-legibility-and-metis.html", "filename": "coupling-legibility-and-metis.html"}, {"title": "Factors Shaping Legibility and Métis", "href": "factors-shaping-legibility-and-metis.html", "filename": "factors-shaping-legibility-and-metis.html"}, {"title": "Will It Scale?", "href": "will-it-scale.html", "filename": "will-it-scale.html"}, {"title": "Context Is Not Just Transmitted", "href": "context-is-not-just-transmitted.html", "filename": "context-is-not-just-transmitted.html"}, {"title": "AI Opportunities (and Caveats)", "href": "ai-opportunities-and-caveats.html", "filename": "ai-opportunities-and-caveats.html"}, {"title": "Twelve Practical Moves", "href": "twelve-practical-moves.html", "filename": "twelve-practical-moves.html"}, {"title": "Glossary", "href": "glossary.html", "filename": "glossary.html"}];
   const root = document.getElementById("series-nav-root");
   if (!root || !links.length) return;
 
@@ -28,23 +28,23 @@
   const previousLink = currentIndex > 0 ? links[currentIndex - 1] : null;
   const nextLink = currentIndex < links.length - 1 ? links[currentIndex + 1] : null;
 
-  const navItems = [];
-  if (previousLink) {
-    navItems.push(renderLink("Previous", previousLink.title, previousLink.href));
-  }
-  if (nextLink) {
-    navItems.push(renderLink("Next", nextLink.title, nextLink.href));
-  }
   const options = links.map((link, index) => {
     const selected = index === currentIndex ? " selected" : "";
     return `<option value="${escapeHtml(link.href)}"${selected}>${escapeHtml(link.title)}</option>`;
   }).join("");
-  const sideNavHtml = navItems.length
-    ? `<div class="flex min-w-0 flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
-        <span class="hidden text-slate-300 sm:inline">|</span>
-        ${navItems.join("")}
-      </div>`
-    : "";
+  let sideNavHtml = "";
+  if (previousLink || nextLink) {
+    const previousHtml = previousLink ? renderLink("Previous", previousLink.title, previousLink.href) : "";
+    const nextHtml = nextLink ? renderLink("Next", nextLink.title, nextLink.href) : "";
+    const separatorHtml = previousLink && nextLink
+      ? '<span class="hidden text-slate-300 sm:inline">|</span>'
+      : "";
+    sideNavHtml = `<div class="flex min-w-0 flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+        ${previousHtml}
+        ${separatorHtml}
+        ${nextHtml}
+      </div>`;
+  }
 
   root.innerHTML = `<div class="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
       <div class="flex min-w-0 items-center gap-3">
