@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coupling, Legibility, and Métis</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .display-type {
+      font-family: "Fraunces", ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      font-variation-settings: "SOFT" 50;
+    }
+    .series-title {
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+      text-wrap: balance;
+    }
+    .article-title {
+      letter-spacing: -0.045em;
+      line-height: 0.96;
+      text-wrap: balance;
+    }
+    .section-title {
+      letter-spacing: -0.03em;
+      line-height: 1.02;
+      text-wrap: balance;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900">
+  <div class="mx-auto max-w-7xl px-6 py-10 sm:px-8 lg:px-12">
+    <div class="mb-6 rounded-2xl border border-slate-200 bg-white px-5 py-5 shadow-sm"><div class="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between"><p class="display-type series-title text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">Getting The Words Right</p><div class="text-sm leading-6 text-slate-600 lg:text-right"><p>by John Cutler</p><p class="mt-1">Use and adapt with attribution.</p></div></div><div class="mt-5 border-t border-slate-200 pt-4"><div id="series-nav-root"></div></div></div>
+    <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_18rem]">
+      <main class="min-w-0">
+        <div class="rounded-3xl border border-slate-200 bg-white px-6 py-8 shadow-sm sm:px-10 sm:py-12">
+          <header class="mb-10"><h1 id="coupling-legibility-and-m-tis" class="display-type article-title text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">Coupling, Legibility, and Métis</h1></header>
+<div class="mt-6 rounded-2xl border border-sky-200 bg-sky-50 px-5 py-4 shadow-sm"><p class="text-xs font-semibold uppercase tracking-[0.2em] text-sky-700">Summary</p><p class="mt-2 break-words text-lg leading-8 text-slate-700">Coupling changes how much coordination a system requires; legibility and métis are two different ways of carrying that burden, and each quadrant fails in a different way.</p></div>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This quadrant model is useful because it shows that friction is not just about process quality. It is also about how much of the coordination burden is being carried by formal abstractions versus local judgment.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Read through the language of this series, the diagram is partly about control and autonomy, but more deeply about whether the system's <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">endurants</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">perdurants</code>, and abstractions match reality closely enough to support the work.</p>
+<figure class="my-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><img src="assets/part-8-coupling-legibility-metis.png" alt="Coupling quadrants showing command towers, locked grid, federated islands, and hands-off gridlock" class="w-full object-contain" /></figure>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700"><em>A coupling quadrant can be read as a map of where legibility dominates, where métis dominates, and where each one starts to fail.</em></p>
+<h2 id="command-towers" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Command Towers</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This is the most legibility-first quadrant.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In this setting:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">legibility dominates</li><li class="pl-1">métis is suppressed</li><li class="pl-1">the endurants are large, stable, and imposed: teams, functions, projects</li><li class="pl-1">the perdurants are standardized, top-down workflows</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Work is shaped into clean, stable containers. Processes are predefined and expected to repeat. The system assumes nouns that behave and verbs that repeat.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This works as long as:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">the abstractions are close enough to reality</li><li class="pl-1">the work is not too dynamic</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In knowledge work, the problem is that local context gets compressed out. Teams wait for decisions because the system must update first.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Friction type:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">waiting friction</li><li class="pl-1">suppressed adaptation</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Failure mode: the model becomes the bottleneck. The system is legible, but not responsive.</p>
+<h2 id="locked-grid" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Locked Grid</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This is the most structurally constrained quadrant.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In this setting:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">attempted legibility dominates under extreme coupling</li><li class="pl-1">métis is overwhelmed</li><li class="pl-1">the endurants are very large and highly entangled: cross-team initiatives, programs</li><li class="pl-1">the perdurants are interwoven and non-linear in reality, but forced into linear stages</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The "thing" spans many teams. The "flow" is deeply interdependent. Legibility is pushed hard to control the system.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">But:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">the abstractions are often lossy</li><li class="pl-1">the process cannot actually be linearized</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">So both begin to break down. Métis struggles too, because the local unit is now too large to reason about effectively.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Friction type:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">coordination friction</li><li class="pl-1">translation friction</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Failure mode: everything must be coordinated, but nothing is accurately represented. This is maximum brittleness: the system is both tightly coupled and poorly modeled.</p>
+<h2 id="federated-islands" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Federated Islands</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This is the most métis-friendly quadrant.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In this setting:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">métis dominates</li><li class="pl-1">legibility is minimal</li><li class="pl-1">the endurants are small, local, and often implicit</li><li class="pl-1">the perdurants are emergent, adaptive, and team-specific</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Teams operate with strong local context. Definitions evolve as needed. Work is shaped around real conditions rather than imposed categories.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Legibility still exists, but lightly:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">minimal shared structures</li><li class="pl-1">weak global rollups</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Friction type:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">low local friction</li><li class="pl-1">occasional global misalignment</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Failure mode: local systems work, but the broader organization lacks a strong shared picture.</p>
+<h2 id="hands-off-gridlock" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Hands-Off Gridlock</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This is the most unstable quadrant.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In this setting:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">neither legibility nor métis fully works</li><li class="pl-1">effective legibility is missing</li><li class="pl-1">métis is stretched across too many boundaries</li><li class="pl-1">the endurants are cross-team but poorly defined</li><li class="pl-1">the perdurants are highly interdependent and negotiated in real time</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Work requires coordination across teams, but no strong legible system exists to support it. So teams rely on:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">constant conversation</li><li class="pl-1">ad hoc negotiation</li><li class="pl-1">re-interpretation of shared work</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">But:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">no shared abstraction stabilizes meaning</li><li class="pl-1">no structure reduces the coordination burden</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Friction type:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">continuous coordination friction</li><li class="pl-1">high cognitive load</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Failure mode: perpetual negotiation. The system depends on métis, but spreads it too thin to be effective.</p>
+<h2 id="the-cycle" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">The Cycle</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The important thing about the quadrants is that organizations do not usually stay in one of them. The pattern is often cyclical.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">One common sequence looks like this:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">Locked Grid</code> becomes unbearable because coordination and abstraction both break down</li><li class="pl-1">leaders respond by pulling toward <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">Command Towers</code> to reset control</li><li class="pl-1">that reset reduces ambiguity, but eventually becomes too top-down and too slow</li><li class="pl-1">pressure then pushes the system toward <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">Federated Islands</code> so teams can move again</li><li class="pl-1">over time, dependencies accumulate across those islands</li><li class="pl-1">the system drifts toward <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">Hands-Off Gridlock</code> and then back toward <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">Locked Grid</code></li></ul>
+<figure class="my-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><img src="assets/part-8-coupling-cycle.png" alt="Coupling quadrants with arrows showing a recurring movement between states" class="w-full object-contain" /></figure>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700"><em>The quadrants often behave less like destinations and more like a recurring movement between control, autonomy, and accumulating coordination burden.</em></p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">What changes from one turn of the cycle to the next is not just the amount of control. It is also the quality of the abstractions the system is using.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">If the abstractions improve, the cycle can loosen. If they remain poor, the organization keeps rediscovering the same friction in different forms.</p>
+<h2 id="cross-quadrant-insight" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Cross-Quadrant Insight</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This diagram is really about how organizations distribute the burden between legibility and métis under different coupling conditions.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Horizontal coupling increases the need for shared understanding. It pushes toward legibility, shared anchors, or a wider local scope for métis.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Vertical coupling increases imposed structure. It pushes toward standardized endurants and perdurants, but also risks over-compressing reality.</p>
+<h2 id="endurants-and-perdurants" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Endurants and Perdurants</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Across the diagram:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">endurants become smaller and more local in low-coupling settings</li><li class="pl-1">endurants become larger and more abstract in high-coupling settings</li><li class="pl-1">perdurants stay more emergent and adaptive in low-coupling settings</li><li class="pl-1">perdurants are more likely to be forced into standardized sequences in high-control settings</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The key issue is not just the amount of coupling. It is whether the endurants and perdurants being used in the model actually match reality.</p>
+<h2 id="abstraction-quality" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Abstraction Quality</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This cuts across all four quadrants.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Good abstractions:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">reduce friction</li><li class="pl-1">support both legibility and métis</li><li class="pl-1">let local judgment and shared structure reinforce each other</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Poor abstractions:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">increase translation work</li><li class="pl-1">force teams to rebuild context elsewhere</li><li class="pl-1">make both legibility and métis work harder than they should</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">That is why <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">Locked Grid</code> becomes unbearable and <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">Hands-Off Gridlock</code> becomes chaotic.</p>
+<h2 id="final-synthesis" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Final Synthesis</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Coupling determines how much coordination is required. Legibility tries to make that coordination manageable. Métis fills the gaps where legibility falls short.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The tighter version is this: when coupling rises, the system must either improve its abstractions or rely more heavily on métis. If it does neither, friction explodes.</p>
+          <div class="mt-14 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5"><p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Keep Reading</p><a href="factors-shaping-legibility-and-metis.html" class="mt-2 inline-flex items-center text-lg font-medium text-sky-700 underline decoration-sky-300 underline-offset-4 hover:text-sky-900">Factors Shaping Legibility and Métis</a></div>
+        </div>
+      </main>
+      <aside class="lg:sticky lg:top-8 lg:h-fit">
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">On This Page</h2>
+          <ul class="mt-4 space-y-1">
+            <li><a href="#command-towers" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Command Towers</a></li><li><a href="#locked-grid" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Locked Grid</a></li><li><a href="#federated-islands" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Federated Islands</a></li><li><a href="#hands-off-gridlock" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Hands-Off Gridlock</a></li><li><a href="#the-cycle" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">The Cycle</a></li><li><a href="#cross-quadrant-insight" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Cross-Quadrant Insight</a></li><li><a href="#endurants-and-perdurants" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Endurants and Perdurants</a></li><li><a href="#abstraction-quality" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Abstraction Quality</a></li><li><a href="#final-synthesis" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Final Synthesis</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <script src="series-nav.js"></script>
+</body>
+</html>

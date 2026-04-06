@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Part 2: Why Kanban Works Better In Manufacturing Than In Knowledge Work</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900">
+  <div class="mx-auto max-w-7xl px-6 py-10 sm:px-8 lg:px-12">
+    <div id="series-nav-root"></div>
+    <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_18rem]">
+      <main class="min-w-0">
+        <div class="rounded-3xl border border-slate-200 bg-white px-6 py-8 shadow-sm sm:px-10 sm:py-12">
+          <div class="mb-8 rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:hidden">
+            <label for="section-nav-mobile" class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Jump To Section</label>
+            <select id="section-nav-mobile" class="mt-3 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none ring-0 transition focus:border-sky-500">
+              <option value="">Select a section...</option>
+              <option value="names">Names</option><option value="first-principles">First Principles</option><option value="manufacturing">Manufacturing</option><option value="strong-coupling">Strong Coupling</option><option value="knowledge-work">Knowledge Work</option><option value="reliable-mapping">Reliable Mapping</option><option value="ontology">Ontology</option><option value="bounded-flow">Bounded Flow</option><option value="clean-version">Clean Version</option><option value="contrast">Contrast</option><option value="where-it-still-works">Where It Still Works</option><option value="a-simple-test">A Simple Test</option>
+            </select>
+          </div>
+          <header class="mb-10"><p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Ontology Note</p><h1 id="part-2-why-kanban-works-better-in-manufacturing-than-in-knowledge-work" class="mt-3 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">Part 2: Why Kanban Works Better In Manufacturing Than In Knowledge Work</h1></header>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This note builds on the distinction between <strong class="font-semibold text-slate-900">endurants</strong> and <strong class="font-semibold text-slate-900">perdurants</strong>.</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">An <strong class="font-semibold text-slate-900">endurant</strong> is the thing that persists: a part, a batch, a machine, a ticket, a request.</li><li class="pl-1">A <strong class="font-semibold text-slate-900">perdurant</strong> is the flow, process, or unfolding activity through time.</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The core claim here is simple:</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700"><strong class="font-semibold text-slate-900">Kanban works best when both the thing and the flow are stable, and when the thing's position in the flow reliably represents reality.</strong></p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Or even shorter:</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700"><strong class="font-semibold text-slate-900">Kanban assumes nouns that behave and verbs that repeat.</strong></p>
+<h2 id="names" class="mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Names</h2>
+<div class="mt-6 overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm"><table class="min-w-full border-collapse"><thead class="bg-slate-50"><tr><th class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wide text-slate-600">Term in this note</th><th class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wide text-slate-600">Roughly similar language</th></tr></thead><tbody><tr class="border-t border-slate-200"><td class="px-4 py-3 align-top text-base leading-7 text-slate-700"><strong class="font-semibold text-slate-900">Endurant</strong></td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">thing</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">entity</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">object</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">item</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">work item</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">part</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">unit</code></td></tr><tr class="border-t border-slate-200"><td class="px-4 py-3 align-top text-base leading-7 text-slate-700"><strong class="font-semibold text-slate-900">Perdurant</strong></td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">process</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">flow</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">activity</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">operation</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">workflow</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">work stream</code></td></tr><tr class="border-t border-slate-200"><td class="px-4 py-3 align-top text-base leading-7 text-slate-700"><strong class="font-semibold text-slate-900">Transition event</strong></td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">movement</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">status change</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">state change</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">handoff</code></td></tr><tr class="border-t border-slate-200"><td class="px-4 py-3 align-top text-base leading-7 text-slate-700"><strong class="font-semibold text-slate-900">State</strong></td><td class="px-4 py-3 align-top text-base leading-7 text-slate-700"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">status</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">condition</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">mode</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">column position</code></td></tr></tbody></table></div>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">If you come from Kanban practice rather than ontology:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">the card or item is the <strong class="font-semibold text-slate-900">endurant</strong></li><li class="pl-1">the flow of work is the <strong class="font-semibold text-slate-900">perdurant</strong></li><li class="pl-1">movement across the board is a set of <strong class="font-semibold text-slate-900">transition events</strong></li></ul>
+<h2 id="first-principles" class="mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">First Principles</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Kanban is not just a board. At first principles, it is a system for:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">controlling flow</li><li class="pl-1">of things</li><li class="pl-1">through repeatable stages</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">So it assumes:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">you have identifiable things</li><li class="pl-1">those things move through a reasonably consistent process</li><li class="pl-1">the mapping between the thing and the flow state is predictable</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">That last point matters most. Kanban is not just assuming stability in the abstract. It is assuming that the <strong class="font-semibold text-slate-900">thing</strong> and the <strong class="font-semibold text-slate-900">flow</strong> reinforce each other.</p>
+<h2 id="manufacturing" class="mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Manufacturing</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In manufacturing, the endurants are usually stable:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">a part is a part</li><li class="pl-1">a unit is a unit</li><li class="pl-1">a batch is a batch</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">There may be edge cases, but most of the time people are not arguing about what the thing is.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The perdurants are also usually stable:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">the process steps are known</li><li class="pl-1">the steps repeat</li><li class="pl-1">the process does not radically morph mid-stream</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">For example:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">Cut</code></li><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">Assemble</code></li><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">Inspect</code></li><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">Ship</code></li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">And this is the key:</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700"><strong class="font-semibold text-slate-900">The state of the endurant is closely tied to its position in the perdurant.</strong></p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">If a part is in <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">Inspection</code>, that usually means something real and consistent. So:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">the column is meaningful</li><li class="pl-1">the movement is meaningful</li><li class="pl-1">WIP limits are meaningful</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In other words, Kanban works in manufacturing not just because the parts are stable and the process is stable independently, but because the relationship between them is tight.</p>
+<h2 id="strong-coupling" class="mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Strong Coupling</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In manufacturing:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">the endurant is real</li><li class="pl-1">the perdurant is real</li><li class="pl-1">the coupling between them is strong</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">That means the board can act as a useful operational model of reality.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">When the card moves, something real has happened.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">When the queue grows, it usually signals something real.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">When WIP is too high, it usually points to an actual flow problem.</p>
+<h2 id="knowledge-work" class="mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Knowledge Work</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Software teams often borrow the same structure:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">tickets</code> or <code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">stories</code> play the role of endurants</li><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">columns</code> play the role of perdurant stages</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">But the stability is weaker on both sides.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The endurants are shaky:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">what exactly is a ticket?</li><li class="pl-1">what is a feature?</li><li class="pl-1">where does one piece of work end and another begin?</li><li class="pl-1">scope changes constantly</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The perdurants are shaky too:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">stages are inconsistently applied</li><li class="pl-1">work jumps around</li><li class="pl-1">discovery changes the path</li><li class="pl-1">loops and rework are common</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The result is that the coupling breaks down.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The column no longer reliably reflects reality.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Examples:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">In Progress</code> can mean ten different things</li><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">Done</code> may hide unresolved issues</li><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">Blocked</code> may describe politics, not just technical dependency</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">So the board still has value, but it becomes a lossy representation rather than a tight operational mirror.</p>
+<h2 id="reliable-mapping" class="mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Reliable Mapping</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The important distinction is not simply:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">manufacturing is stable</li><li class="pl-1">knowledge work is unstable</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The deeper point is:</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700"><strong class="font-semibold text-slate-900">Kanban works when the mapping between thing and flow state is reliable.</strong></p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">So:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">in manufacturing, the mapping is usually strong</li><li class="pl-1">in knowledge work, the mapping is often weak</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">That is why a Kanban board in manufacturing often feels literal, while a Kanban board in knowledge work often feels interpretive.</p>
+<h2 id="ontology" class="mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Ontology</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This fits directly with the earlier ontology distinction.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In manufacturing:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">the <strong class="font-semibold text-slate-900">endurant</strong> is real: part, unit, batch</li><li class="pl-1">the <strong class="font-semibold text-slate-900">perdurant</strong> is real: the production process</li><li class="pl-1">the relationship is tight</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In knowledge work:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">the <strong class="font-semibold text-slate-900">endurant</strong> is often partly constructed: ticket, initiative, request</li><li class="pl-1">the <strong class="font-semibold text-slate-900">perdurant</strong> is messy, evolving, and discovery-heavy</li><li class="pl-1">the relationship is loose and lossy</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">So the problem is not that Kanban is wrong. The problem is that it depends on a kind of ontological stability that many knowledge-work settings only partially have.</p>
+<h2 id="bounded-flow" class="mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Bounded Flow</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Kanban works best inside bounded, stable flows.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">It works extremely well inside a bounded, stable flow. It assumes:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">reasonably consistent intake</li><li class="pl-1">reasonably consistent work types</li><li class="pl-1">reasonably consistent process</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">But it says much less about:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">where work comes from</li><li class="pl-1">how work changes shape upstream</li><li class="pl-1">how meaning evolves during discovery</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Those are exactly the places where the perdurant is unstable and the coupling between thing and flow starts to break.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This is also why Kanban often gets harder as you move upstream or outward.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">At the team level, a board can still be a useful model of flow.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">At the portfolio level, or in highly autonomous environments, the board often starts mixing:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">incoming demand</li><li class="pl-1">self-generated work</li><li class="pl-1">strategy</li><li class="pl-1">politics</li><li class="pl-1">dependencies</li><li class="pl-1">changing definitions of the work itself</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">At that point, the board may still be useful, but it is no longer a simple left-to-right picture of reality.</p>
+<h2 id="clean-version" class="mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Clean Version</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Here is the clean version:</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700"><strong class="font-semibold text-slate-900">Kanban works best when both the thing and the flow are stable, and when a thing's position in the flow reliably represents reality.</strong></p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">And the even tighter version:</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700"><strong class="font-semibold text-slate-900">Kanban assumes nouns that behave and verbs that repeat.</strong></p>
+<h2 id="contrast" class="mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Contrast</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The contrast becomes sharp:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">factories: nouns are real, verbs are repeatable, so Kanban thrives</li><li class="pl-1">knowledge work: nouns are approximations, verbs are evolving, so Kanban strains</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This does not mean Kanban is useless in knowledge work. It means its fit is uneven and context-dependent.</p>
+<h2 id="where-it-still-works" class="mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Where It Still Works</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Even in knowledge work, Kanban can work very well in bounded areas where the coupling becomes stronger again.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Examples:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">support queues</li><li class="pl-1">service desks</li><li class="pl-1">standardized review pipelines</li><li class="pl-1">repetitive operational workflows</li><li class="pl-1">content production pipelines with repeatable stages</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In those settings, both the thing and the flow become more stable, so the board becomes more truthful.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">More generally, Kanban is useful when it is used for one or more of these jobs:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">making queueing visible</li><li class="pl-1">exposing bottlenecks</li><li class="pl-1">limiting WIP</li><li class="pl-1">improving handoffs</li><li class="pl-1">stabilizing a repeatable service flow</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">It is less useful when people expect the same board to explain strategy formation, political influence, customer context, and evolving meaning all at once.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In those cases, the board is usually carrying more than one system at the same time.</p>
+<h2 id="a-simple-test" class="mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">A Simple Test</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This matters because it gives you a sharper lens for deciding when to trust a board.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Ask:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">is the thing actually stable?</li><li class="pl-1">is the flow actually stable?</li><li class="pl-1">does board position really correspond to reality?</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">If the answer is yes, Kanban can be powerful.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">If the answer is mostly no, the board may still be useful, but it should be treated as a rough coordination device rather than an accurate model of work.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">And in some contexts, it is better treated as a living map than as a pipeline:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">useful for surfacing what is happening</li><li class="pl-1">useful for conversation and coordination</li><li class="pl-1">less reliable as a precise model of how work actually unfolds</li></ul>
+          
+        </div>
+      </main>
+      <aside class="lg:sticky lg:top-8 lg:h-fit">
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">On This Page</h2>
+          <ul class="mt-4 space-y-1">
+            <li><a href="#names" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Names</a></li><li><a href="#first-principles" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">First Principles</a></li><li><a href="#manufacturing" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Manufacturing</a></li><li><a href="#strong-coupling" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Strong Coupling</a></li><li><a href="#knowledge-work" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Knowledge Work</a></li><li><a href="#reliable-mapping" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Reliable Mapping</a></li><li><a href="#ontology" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Ontology</a></li><li><a href="#bounded-flow" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Bounded Flow</a></li><li><a href="#clean-version" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Clean Version</a></li><li><a href="#contrast" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Contrast</a></li><li><a href="#where-it-still-works" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Where It Still Works</a></li><li><a href="#a-simple-test" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">A Simple Test</a></li>
+          </ul>
+          <div class="mt-6 rounded-xl bg-sky-50 p-4 text-sm leading-6 text-slate-700">
+            <p class="font-semibold text-slate-900">Rendered with Tailwind CSS</p>
+            <p class="mt-2">This page is generated from the local Markdown note and keeps local image references intact.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <script src="series-nav.js"></script>
+  <script>
+    const sectionNavIds = ["section-nav-mobile"];
+    for (const navId of sectionNavIds) {
+      const control = document.getElementById(navId);
+      if (!control) continue;
+      control.addEventListener("change", (event) => {
+        const anchor = event.target.value;
+        if (!anchor) return;
+        const target = document.getElementById(anchor);
+        if (!target) return;
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        window.location.hash = anchor;
+      });
+    }
+  </script>
+</body>
+</html>

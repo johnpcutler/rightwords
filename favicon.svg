@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Series favicon">
+  <rect width="64" height="64" rx="14" fill="#0f172a"/>
+  <circle cx="20" cy="32" r="8" fill="#38bdf8"/>
+  <path d="M20 18c13 0 24 5 24 14s-11 14-24 14" fill="none" stroke="#f8fafc" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="44" cy="32" r="6" fill="#f8fafc"/>
+</svg>

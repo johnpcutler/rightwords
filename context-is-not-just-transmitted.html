@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Context Is Not Just Transmitted</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .display-type {
+      font-family: "Fraunces", ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      font-variation-settings: "SOFT" 50;
+    }
+    .series-title {
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+      text-wrap: balance;
+    }
+    .article-title {
+      letter-spacing: -0.045em;
+      line-height: 0.96;
+      text-wrap: balance;
+    }
+    .section-title {
+      letter-spacing: -0.03em;
+      line-height: 1.02;
+      text-wrap: balance;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900">
+  <div class="mx-auto max-w-7xl px-6 py-10 sm:px-8 lg:px-12">
+    <div class="mb-6 rounded-2xl border border-slate-200 bg-white px-5 py-5 shadow-sm"><div class="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between"><p class="display-type series-title text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">Getting The Words Right</p><div class="text-sm leading-6 text-slate-600 lg:text-right"><p>by John Cutler</p><p class="mt-1">Use and adapt with attribution.</p></div></div><div class="mt-5 border-t border-slate-200 pt-4"><div id="series-nav-root"></div></div></div>
+    <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_18rem]">
+      <main class="min-w-0">
+        <div class="rounded-3xl border border-slate-200 bg-white px-6 py-8 shadow-sm sm:px-10 sm:py-12">
+          <header class="mb-10"><h1 id="context-is-not-just-transmitted" class="display-type article-title text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">Context Is Not Just Transmitted</h1></header>
+<div class="mt-6 rounded-2xl border border-sky-200 bg-sky-50 px-5 py-4 shadow-sm"><p class="text-xs font-semibold uppercase tracking-[0.2em] text-sky-700">Summary</p><p class="mt-2 break-words text-lg leading-8 text-slate-700">The Shannon-style view treats context as something that can be packaged and sent, while the 4E view treats understanding as something that emerges through interaction; that difference matters most in complex, evolving environments where endurants, perdurants, and meaning itself are still shifting.</p></div>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">One of the most important distinctions in this whole series is that context is not just something that is. In many settings, context is produced through interaction. That changes how we think about communication, coordination, and the role of AI.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">It also connects directly to several earlier themes in the series:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">legibility</code>: the attempt to make context portable, stable, and readable at a distance</li><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">métis</code>: the situated understanding that forms in action</li><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">endurants</code>: the things the organization treats as stable enough to reason about</li><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">perdurants</code>: the unfolding interactions, decisions, and adjustments through which understanding changes</li></ul>
+<figure class="my-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><img src="assets/part-10-context-overlap.png" alt="Two diagrams comparing portable context with interaction-generated context" class="w-full object-contain" /></figure>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700"><em>The key shift is from treating context as portable overlap to treating context as something that emerges through interaction.</em></p>
+<h2 id="shannon-vs-4es" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Shannon vs. 4Es</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The Shannon-style model treats communication as a transmission problem.</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">someone has a message</li><li class="pl-1">context helps decode it</li><li class="pl-1">noise gets in the way</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In that frame, better understanding comes from sending the right information with enough context attached. It is naturally attractive to legibility-first systems because it treats context as something that can be packaged, transported, and decoded.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The 4E view points somewhere else. Understanding is not just the reconstruction of a message. It is shaped by bodies, tools, environments, and interaction.</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">embodied</code>: contact with reality matters</li><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">embedded</code>: the environment shapes what can be seen and done</li><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">extended</code>: thinking is distributed across people and tools</li><li class="pl-1"><code class="rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-slate-700">enactive</code>: understanding emerges through interaction</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The meeting, the working session, or the coordination ritual does not just transfer context. It generates it. That is much closer to the logic of métis, where understanding is formed in the situation rather than merely retrieved from a container.</p>
+<h2 id="context-through-interaction" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Context Through Interaction</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This matters because the portable-context model quietly assumes that people already have what they need, and only need to exchange it.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">But in many real situations:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">the problem is still being framed</li><li class="pl-1">the situation changes as people act</li><li class="pl-1">interpretation shifts through disagreement and adjustment</li><li class="pl-1">shared understanding does not exist beforehand</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">That is especially important in the language of this series. In complex settings, the endurants are evolving, the perdurants are unfolding, and the meaning of both changes as people engage with the work.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Context is therefore not just background. It is part of the process by which the system becomes legible to itself. In other words, the perdurant of interaction helps stabilize what the relevant endurants even are.</p>
+<h2 id="why-this-matters-in-complex-environments" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Why This Matters in Complex Environments</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In complex environments, action and understanding co-evolve.</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">people act</li><li class="pl-1">the system changes</li><li class="pl-1">new signals appear</li><li class="pl-1">interpretations shift</li><li class="pl-1">the next move changes again</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">This is why context cannot always be preloaded. Sometimes the act of coordinating is part of what creates the context needed for the next step.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">That is also why clean summaries can mislead. They freeze what was actually dynamic, negotiated, and still evolving. The result is a familiar failure mode from earlier notes: containers and summaries start to stand in for the underlying reality.</p>
+<h2 id="how-the-approach-varies-by-setting" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">How the Approach Varies by Setting</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Not all work requires the same level of interaction, and not all settings require the same theory of context.</p>
+<figure class="my-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><img src="assets/context-by-setting-high-res.jpg" alt="Matrix showing different approaches by setting, interaction level, and type of context" class="w-full object-contain" /></figure>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700"><em>The right approach depends on both the nature of the work and how much interaction is needed to create meaning.</em></p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">A useful shorthand is:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">in clear settings, endurants and perdurants are stable enough that context can often be preloaded, documented, or ignored</li><li class="pl-1">in complicated settings, context may be distributed, but it can still often be aligned and coordinated across bounded structures</li><li class="pl-1">in complex settings, context often emerges through interaction and cannot be separated from the work itself</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">That means the right use of AI also shifts:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">automate where context is stable and low-interaction</li><li class="pl-1">retrieve and ground where local context matters but meaning is still portable</li><li class="pl-1">support coordination where context is distributed across people and systems</li><li class="pl-1">participate in shared sensemaking where understanding only forms through interaction</li></ul>
+<h2 id="reprise" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Reprise</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">It is useful to return to the original endurant-perdurant diagram here.</p>
+<figure class="my-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><img src="assets/endurant-vs-perdurant-diagram.png" alt="Endurant vs Perdurant diagram" class="w-full object-contain" /></figure>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In simple settings, this diagram can look static. There is an endurant, a process, some events, and a state. But in complex settings, the important point is where context is actually emerging.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">It emerges through:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">events and transition events that change the state of an endurant</li><li class="pl-1">event histories that accumulate traces of what happened</li><li class="pl-1">perdurants that are still unfolding as people interact with the situation</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">That is why context is not just a package surrounding a message. In many complex environments, context is produced as the endurant changes state, as events accumulate into history, and as the perdurant itself continues to unfold.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">Seen this way, context is partly historical, partly situational, and partly emergent. It is not just what actors bring to the interaction. It is also what the interaction produces.</p>
+<h2 id="the-core-insight" class="display-type section-title mt-14 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">The Core Insight</h2>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">The practical mistake is treating every environment as if it followed the same communication model.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">If you assume all understanding is transmitted, you will over-invest in summaries, pre-reads, documentation, and context packaging. If you recognize that some understanding is generated through interaction, you start to value rituals, dialogue, backbriefs, working sessions, and other ways of creating context together.</p>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">That is another way of stating the series tension:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">legibility asks how to make context portable</li><li class="pl-1">métis asks how to stay close to lived reality</li><li class="pl-1">endurants ask what is stable enough to name</li><li class="pl-1">perdurants ask what is still unfolding and therefore must be worked through</li></ul>
+<p class="mt-4 break-words text-lg leading-8 text-slate-700">In the simplest terms:</p>
+<ul class="mt-4 ml-6 list-disc space-y-2 break-words text-lg leading-8 text-slate-700"><li class="pl-1">Shannon asks: how do we send context well?</li><li class="pl-1">4Es asks: how do we create understanding together?</li></ul>
+          <div class="mt-14 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5"><p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Keep Reading</p><a href="ai-opportunities-and-caveats.html" class="mt-2 inline-flex items-center text-lg font-medium text-sky-700 underline decoration-sky-300 underline-offset-4 hover:text-sky-900">AI Opportunities (and Caveats)</a></div>
+        </div>
+      </main>
+      <aside class="lg:sticky lg:top-8 lg:h-fit">
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">On This Page</h2>
+          <ul class="mt-4 space-y-1">
+            <li><a href="#shannon-vs-4es" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Shannon vs. 4Es</a></li><li><a href="#context-through-interaction" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Context Through Interaction</a></li><li><a href="#why-this-matters-in-complex-environments" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Why This Matters in Complex Environments</a></li><li><a href="#how-the-approach-varies-by-setting" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">How the Approach Varies by Setting</a></li><li><a href="#reprise" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">Reprise</a></li><li><a href="#the-core-insight" class="block rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-950">The Core Insight</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <script src="series-nav.js"></script>
+</body>
+</html>
