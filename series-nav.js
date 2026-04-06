@@ -15,7 +15,7 @@
   }
 
   function renderLink(label, title, href) {
-    return `<a href="${escapeHtml(href)}" class="inline-flex min-w-0 items-center gap-2 text-sm text-slate-600 transition hover:text-slate-950">
+    return `<a href="${escapeHtml(href)}" class="inline-flex min-w-0 items-center gap-2 rounded-xl border border-white/80 bg-white/80 px-3 py-2.5 text-sm text-slate-700 shadow-sm backdrop-blur-sm transition hover:bg-white hover:text-slate-950">
       <span class="shrink-0 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">${label}</span>
       <span class="min-w-0 truncate font-medium text-slate-800">${escapeHtml(title)}</span>
     </a>`;
@@ -39,7 +39,7 @@
     const separatorHtml = previousLink && nextLink
       ? '<span class="hidden text-slate-300 sm:inline">|</span>'
       : "";
-    sideNavHtml = `<div class="flex min-w-0 flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+    sideNavHtml = `<div class="flex min-w-0 flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
         ${previousHtml}
         ${separatorHtml}
         ${nextHtml}
@@ -47,11 +47,11 @@
   }
 
   root.innerHTML = `<div class="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-      <div class="flex min-w-0 items-center gap-3">
+      <div class="flex min-w-0 items-center gap-3 rounded-xl border border-white/80 bg-white/75 px-3 py-2.5 shadow-sm backdrop-blur-sm">
         <span class="shrink-0 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Jump:</span>
         <label class="block min-w-0 flex-1 lg:w-80">
           <span class="sr-only">Jump to article</span>
-          <select id="series-nav-select" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none ring-0 transition focus:border-sky-500">
+          <select id="series-nav-select" class="w-full rounded-xl border border-slate-300/80 bg-white/90 px-4 py-3 text-sm text-slate-700 shadow-sm outline-none ring-0 transition focus:border-sky-500">
             ${options}
           </select>
         </label>
